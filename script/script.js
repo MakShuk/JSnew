@@ -10,12 +10,12 @@ const personalMovieDB = {
   priver: false,
 };
 
-const a = prompt("Один из последних просмотренных фильмов?", ""),
-  b = prompt("На сколтко оцените?", ""),
-  c = prompt("Один из последних просмотренных фильмов?", ""),
-  d = prompt("На сколтко оцените?", "");
 
-  personalMovieDB.movies[a] = b;
-  personalMovieDB.movies[c] = d;
+  for(let i = 0; i < 2; i++){
+      const a = prompt("Один из последних просмотренных фильмов?", ""),
+        b = prompt("На сколтко оцените?", "");
+
+        personalMovieDB.movies[a] = b;
+  }
 
   console.log(personalMovieDB);
